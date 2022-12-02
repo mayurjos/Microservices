@@ -121,15 +121,15 @@
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/Shopping/GetShopping/{userName}",
+      "DownstreamPathTemplate": "/api/v1/Shopping/{userName}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "8005"
+          "Host": "shopping.aggregator",
+          "Port": "80"
         }
       ],
-      "UpstreamPathTemplate": "/shopping/GetShopping/{userName}",
+      "UpstreamPathTemplate": "/shopping/{userName}",
       "UpstreamHttpMethod": [ "GET" ]
     }
   ],

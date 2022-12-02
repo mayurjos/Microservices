@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Common.Logging
 {
-    public static class DependencyInjection
+    public static class HostExtensions
     {
         public static IHostBuilder UseCommonLogger(this IHostBuilder builder)
         {
