@@ -76,6 +76,12 @@ services:
   kibana:
     image: docker.elastic.co/kibana/kibana:7.9.2
 
+  webmonitoring:
+    image: ${DOCKER_REGISTRY-}webmonitoring
+    build:
+      context: .
+      dockerfile: WebApps/WebMonitoring/Dockerfile
+
 volumes:
   mongo_data:
   portainer_data:
@@ -83,3 +89,4 @@ volumes:
   pgadmin_data:
   mssql_data:
   elasticsearch-data:
+
